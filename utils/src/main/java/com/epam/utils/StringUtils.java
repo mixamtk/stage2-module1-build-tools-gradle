@@ -1,7 +1,9 @@
 package com.epam.utils;
 
+import static org.apache.commons.lang3.StringUtils.*;
+
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
-         //here magic will happen
+        return isNumeric(str) && Double.parseDouble(str) > 0;
     }
 }
